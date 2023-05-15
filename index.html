@@ -1,26 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en-GB">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            Azubi Africa Classwork/Assignment
+        </title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+          
+        </header>
 
-<head>
-    <title>Box Model Assignment</title>
-    <style>
-      div {
-        border: 1px solid black;
-        background-color: lightblue;
-        padding-top: 10px;
-        padding-right: 10px;
-        padding-bottom: 10px;
-        padding-left: 10px;
-        width: 300px;
-        height: 200px;
-        }
-    </style>
-</head>
+        <section>
+            <nav>
+                <h1>Menu</h1>
+                <ul>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Flickr</a></li>
+                </ul>
+            </nav>
+            <article>
+                <h1>About</h1>
+                <div>
+                    <p>
+                        It can be intimidating for women to learn ans ask questions when thay are in an <z>extreme minority</z>. While open and welcoming, today's budding developer community is upmto <z>91% male</z>. If we can empower more females with the confidence in their technological capabilities, <k>we can begin to change this landscape</k>.
+                    </p>
+                </div>
 
-<body>
-    <div class="box">
-        my very first box
-    </div>
-</body>
+                <h1>Our Locations</h1>
+                <ul>
+                    <li>USA</li>
+                        <ul>
+                            <li><a href="#">New York</a></li>
+                            <li><a href="#">Colombus</a></li>
+                            <li><a href="#">Austin</a></li>
+                            <li><a href="#">Philly</a></li> 
+                        </ul>
+                        <li>World</li>
+                        <ul>
+                            <li><a href="#">Ottawwa</a></li>
+                            <li><a href="#">Sidney</a></li>
+                        </ul>
+                </ul>
+                <h1>Upcoming Classes</h1>
+                <table style="width:50%">
+                    <tr>
+                        <th>Location</th>
+                        <th>Topic</th>
+                    </tr>
+                    <tr>
+                        <td style="color:blue">New York</td>
+                        <td style="color:brown">JavaScript & jQuery</td>
+                    </tr>
+                    <tr>
+                        <td style="color:blue">New York</td>
+                        <td style="color:brown">HTML & CSS</td>
+                    </tr>
+                </table>
+                <h1>Sign Up!</h1>
+                    <form>
+                        <div style="margin-bottom: 20px">
+                            <label for ="firstName">Name:</label>
+                            <input type="text" id="firstName" name="firstName" placeholder="Pamela Fox" required><br>
+                        </div>
+                        <div style="margin-bottom: 20px">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="pamela@gmail.com" required><br/>
+                        </div>
+                        <div style="margin-bottom:30px">
+                            <label for ="Nationality">Location:</label>
+                            <select name ="Countries" id = "countries">
+                                <option value = "Kenya">Kenya</option>
+                                <option value = "Uganda">Uganda</option>
+                                <option value = "Tanzania">Tanzania</option>
+                                <option value = "DRC">DRC</option>
+                                <option value = "Rwanda">Rwanda</option>
+                                <option value = "South Africa">South Africa</option>
+                                <option value = "Nigeria">Nigeria</option>
+                                <option value = "Ghana">Ghana</option>
+                            </select>
+                        </div>
 
+                        <div style="border: 1px solid black">
+                        <p>Gender</p>
+                        <input type="radio" id="male" name="gender" value="Male">
+                        <label for="Gender">Male</label>
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="Gender">Female</label>
+                        <input type="radio" id="not_disclosed" name="gender" value="not_disclosed">
+                        <label for="Gender">Prefer not to disclose</label>
+                        </div>
+                        <p></p>
+
+                        <label for="LeaveComment">Experience:</label><br/>
+                        <textarea id="LeaveComment" name="LeaveComment" rows="4" cols="50" placeholder="leave us a comment" required></textarea></br>
+
+                        <p></p>
+
+                        <input type="submit" value="Sign Up!">
+                    </form>
+            </article>
+        </section>
+        <footer>
+            <p>This is the end of the page</p>
+            <p> &#169; 2022. All rights reserved</p>
+        </footer>
+    </body>
 </html>
