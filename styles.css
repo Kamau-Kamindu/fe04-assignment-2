@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Let's style the header*/
+
+header {
+    background-color: brown;
+    text-align: left;
+    font-size: 35px;
+    color: white;
+    opacity: 0.7;
+    background-image: url('/img/css_assignment.png');
+    padding: 50px;
+    background-repeat: no-repeat;
+}
+
+/*now we create two columns (nav 30% and article 70%) that float next to each other*/
+nav {
+    float: left;
+    width: 30%;
+   /* height: 300px; */
+    background: white;
+    padding: 20px;
+}
+/*styling the items in the menu*/
+nav ul {
+    list-style-type: disc;
+    padding: 0%;
+}
+
+article {
+    float: left;
+    width: 70%;
+   /* height: 300px; */
+    background: #f1f1f1;
+    padding: 20px;
+}
+/*let's clear the floats after the columns we just created*/
+section::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/* let's finally style the footer*/
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+/* responsive layout which will enable the columns nav and Article stack on top of each other in smaller screens*/
+@media (max-width: 600px) {
+    nav,article {
+        width: 100%;
+        height: auto;
+    }
+}
+strong {
+    font-weight: bold;
+}
+h1 {
+    font-size: 30px;
+    color : brown;
+}
+div {
+    width: 50%;
+}
+table, th, td {
+    border:1px solid black;
+  }
+z{
+    color:brown;
+    font-weight: bolder;
+}
+k{
+    color:brown;
+    font-style: italic;
+}
